@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: agent-ops-service
+
+agent:
+  notification:
+    enabled: false
+    dingtalk:
+      webhook: ""
+    feishu:
+      webhook: ""
+
+logging:
+  level:
+    root: INFO
+    com.example.agent: DEBUG
