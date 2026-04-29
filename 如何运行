@@ -1,0 +1,8 @@
+# 编译打包
+mvn package -DskipTests
+
+# 启动服务
+java -jar target\agent-ops-1.0.0.jar
+
+# 测试管道
+curl -X POST "http://localhost:8080/api/agent/simulate-error?type=npe"
